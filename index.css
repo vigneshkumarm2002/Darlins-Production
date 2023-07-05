@@ -12,7 +12,9 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #F5F5F5 !important;
 }
-
+.loading {
+  visibility: hidden;
+}
 .hom-slid {
   position: relative;
   height: 100vh;
@@ -979,13 +981,11 @@ height:90%;
   }
   
   .partner-logo {
-    width: 100%;
-    height: 120px;
-    display: flex;
+    width: 130px;
+    height: 110px;
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
   }
+
     .connectSection {
       height: 400px;
       margin: 20px 0px;

@@ -22,3 +22,7 @@ window.addEventListener('scroll', function () {
   navbar.classList.toggle('transparent', !scrolled);
   navbar.classList.toggle('scrolled', scrolled);
 });
+
+window.addEventListener('load', function() {
+  document.body.classList.remove('loading');
+});
