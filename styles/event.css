@@ -1,0 +1,224 @@
+body,html{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: hidden;
+}
+header{
+    height: 400px;
+    width: 100%;
+    background-image: url("./../asset/eventBg-max.jpg");
+    background-size: cover;
+  }
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+.upcomeSection {
+    margin: 0 60px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .AlleventContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  
+  }
+  
+  .AlleventHeading {
+    position: relative;
+    text-align: center;
+  }
+  
+  .AlleventHeading h1 {
+    display: inline;
+    font-size: 34px;
+  }
+  
+  .AlleventHeading .underline {
+    position: absolute;
+    bottom: -6px;
+    left: 25%;
+    height: 3px;
+    width: 50%;
+    background-color: #FFBD39;
+    border-radius: 25px;
+  }
+
+  .pastSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 0px 0px 50px 0px ;
+  }
+  .eventCollection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .eventBoxContainer {
+    padding: 20px;
+    width: 85%;
+    height: auto;
+    background-color: #FFBD39;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease, opacity 0.5s ease;
+
+  }
+  .eventBoxContainer:nth-child(even){
+    align-self: flex-end;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.8s ease, opacity 0.5s ease;
+  }
+  .eventBoxContainer.reveal {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .eventBoxContainer img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .eventContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px  10px 0px;
+  }
+  
+  .eventBoxContainer h3 {
+    text-align: left;
+  }
+  
+  .eventBoxContainer p {
+    text-align: justify;
+    font-size: 18px;
+  }
+  .eventGoing h3{
+    font-weight: 500;
+  }
+
+  .eventList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 60px;
+   
+
+  }
+  .eventList li{
+    font-size: 20px;
+  }
+  @media (max-width:1000px){
+    .eventBoxContainer {
+      padding: 20px;
+      width: 90%;
+    }
+    .eventBoxContainer img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .eventBoxContainer p {
+      font-size: 16px;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+    header{
+      height: 300px;
+      width: 100%;
+      background-image: url("./../asset/eventBg.jpg");
+      background-size: cover;
+    }
+    .upcomeSection {
+      margin: 0 40px;
+    }
+    .eventBoxContainer {
+      padding: 30px;
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
+    }
+    .eventBoxContainer img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .eventContent {
+      gap: 5px;
+      padding: 10px 10px  0px 0px;
+    }
+    .AlleventHeading h1 {
+      font-size: 28px;
+    }
+    .eventList{
+      margin: 0 40px;
+  
+    }
+  }
+
+  @media (max-width:500px){
+    body {
+      overflow-x: hidden;
+    }
+    .upcomeSection {
+      margin: 0 20px;
+      padding: 20px 0px;
+      gap: 30px;
+    }
+    .eventBoxContainer {
+      padding: 20px;
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
+    }
+    .eventBoxContainer img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .eventContent {
+      gap: 5px;
+      padding: 10px 10px  0px 0px;
+    }
+    .AlleventHeading h1 {
+      font-size: 22px;
+    }
+    .eventBoxContainer p {
+      font-size: 14px;
+    }
+    .eventBoxContainer h3 {
+      font-size: 16px;
+    }
+    .eventList{
+      margin: 0 20px;
+        }
+    .eventList li{
+      font-size: 16px;
+    }
+  }
