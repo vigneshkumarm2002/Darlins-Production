@@ -429,6 +429,18 @@ body {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   
 }
+.association{
+  text-align: center;
+}
+.association li{
+  margin-top: 5px;
+  list-style-type: none;
+font-size: 18px;
+font-weight: 400;
+}
+.association h3{
+  margin-bottom: 20px;
+}
 
 /* .eventSection{
     width: 100%;
@@ -947,7 +959,13 @@ height:90%;
   .ser-content div {
     padding: 30px;
   }
-
+  .association li{
+    margin-top: 5px;
+  font-size: 14px;
+  }
+  .association h3{
+    margin-bottom: 10px;
+  }
   
   .eventSection {
     padding: 50px 20px;

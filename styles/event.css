@@ -68,20 +68,21 @@ header{
   }
   
   .eventBoxContainer {
-    padding: 20px;
-    width: 85%;
+    margin-top: 10px;
+    padding: 30px;
+    width: 100%;
     height: auto;
-    background-color: #FFBD39;
+    background-color: #f5c464;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
     gap: 30px;
-    opacity: 0;
+    /* opacity: 0;
     transform: translateX(-100%);
-    transition: transform 0.8s ease, opacity 0.5s ease;
+    transition: transform 0.8s ease, opacity 0.5s ease; */
 
   }
-  .eventBoxContainer:nth-child(even){
+  /* .eventBoxContainer:nth-child(even){
     align-self: flex-end;
     opacity: 0;
     transform: translateX(100%);
@@ -90,11 +91,29 @@ header{
   .eventBoxContainer.reveal {
     opacity: 1;
     transform: translateX(0%);
-  }
+  } */
   .eventBoxContainer img {
-    width: 350px;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 10px;
+  }
+  .eventImg{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 70%;
+  }
+  .eventPoster{
+    width: 40%;
+  }
+
+  .flexImg{
+width: 60%;
+display: flex;
+gap: 10px;
+  }
+  .flexImg img{
+    width: 50%;
   }
   
   .eventContent {
@@ -120,10 +139,15 @@ header{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     margin: 0 60px;
    
 
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .eventList li{
     font-size: 20px;
@@ -131,12 +155,12 @@ header{
   @media (max-width:1000px){
     .eventBoxContainer {
       padding: 20px;
-      width: 90%;
     }
     .eventBoxContainer img {
-      width: 300px;
-      height: 250px;
-      object-fit: cover;
+      height: 280px;
+    }
+    .eventImg{
+      width: 100%;
     }
     .eventBoxContainer p {
       font-size: 16px;
@@ -155,17 +179,30 @@ header{
       margin: 0 40px;
     }
     .eventBoxContainer {
-      padding: 30px;
-      width: 90%;
+      width: 100%;
       height: auto;
       flex-direction: column;
-      align-items: center;
-      gap: 0px;
+      gap: 20px;
     }
     .eventBoxContainer img {
+      height: 250px;
+      border-radius: 8px;
+    }
+    .eventImg{
+      flex-direction: column;
+      gap: 10px;
       width: 100%;
-      height: 350px;
-      object-fit: cover;
+    }
+    .eventPoster{
+      width: 100%;
+    }
+  
+    .flexImg{
+  width: 100%;
+  gap: 10px;
+    }
+    .flexImg img{
+      height: 300px;
     }
     .eventContent {
       gap: 5px;
@@ -197,10 +234,18 @@ header{
       align-items: center;
       gap: 0px;
     }
-    .eventBoxContainer img {
+    .eventBoxContainer {
       width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .eventBoxContainer img {
+      height: 220px;
+      border-radius: 6px;
+    }
+    .flexImg img{
       height: 250px;
-      object-fit: cover;
     }
     .eventContent {
       gap: 5px;
