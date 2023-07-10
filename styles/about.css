@@ -143,7 +143,6 @@ font-size: 34px;
 
   @media only screen and (max-width: 768px) {
     header{
-      background-image: url("./../asset/abtimg-min.jpg");
       height: 500px;
     }
    
