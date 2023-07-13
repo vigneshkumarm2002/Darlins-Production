@@ -398,6 +398,44 @@ body {
   object-fit: fill;
 }
 
+.mentoring{
+  margin-top: 30px;
+text-align: center;
+  
+}
+.mentoring img{
+  width: auto;
+  height: 180px;
+}
+.mentor-Flex{
+
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+  .mentoring h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+.mentorContent{
+  text-align: left;
+}
+.mentorContent p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.mentorContent li{
+  margin-top: 5px;
+  list-style-type: square;
+font-size: 18px;
+font-weight: 400;
+}
+
+
+
 .achievementSection {
   width: 100%;
   padding: 80px 60px;
@@ -874,6 +912,24 @@ height:90%;
   .button-1:hover {
     background-position: 0px 0px;
   }
+  .mentoring img{
+    height: 160px;
+  }
+  .mentor-Flex{
+    gap: 30px;
+  }
+  
+    .mentoring h3{
+      font-size: 18px;
+    }
+    
+  .mentorContent p{
+    font-size: 16px;
+  }
+  .mentorContent li{
+  font-size: 16px;
+  }
+  
 
 }
 
@@ -1058,5 +1114,34 @@ height:90%;
   #menu-overlay ul li a {
     font-size: 18px;
   } 
+  .mentoring{
+    margin-top: 40px;
+  text-align: center;
+    
+  }
+  .mentoring img{
+    height: 150px;
+  }
+  .mentor-Flex{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+    .mentoring h3{
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    
+
+  .mentorContent p{
+    font-size: 16px;
+  }
+  .mentorContent li{
+list-style-type: none;
+text-align: center;
+  font-size: 14px;
+
+  }
+  
 
   }
