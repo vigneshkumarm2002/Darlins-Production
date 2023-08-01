@@ -120,7 +120,7 @@ gap: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 10px 20px  10px 0px;
+    padding: 10px 00px  10px 0px;
   }
   
   .eventBoxContainer h3 {
@@ -206,7 +206,7 @@ gap: 10px;
     }
     .eventContent {
       gap: 5px;
-      padding: 10px 10px  0px 0px;
+      padding: 10px 0px  0px 0px;
     }
     .AlleventHeading h1 {
       font-size: 28px;
@@ -249,7 +249,7 @@ gap: 10px;
     }
     .eventContent {
       gap: 5px;
-      padding: 10px 10px  0px 0px;
+      padding: 10px 0px  0px 0px;
     }
     .AlleventHeading h1 {
       font-size: 22px;

@@ -1,17 +1,19 @@
 var imageArray = [
   "Image_001",
+  "Image_013",
   "Image_031",
+  "Image_033",
+  "Image_014",
   "Image_002",
   "Image_032",
- 
+  "Image_003",
   "Image_025",
   "Image_010",
   "Image_012",
   "Image_013",
   "Image_014",
   "Image_016",
-  "Image_017",
-  "Image_018",
+
   "Image_003",
   "Image_004",
   "Image_033",
@@ -24,11 +26,7 @@ var imageArray = [
   "Image_013",
   "Image_014",
   "Image_016",
-  "Image_017",
-  "Image_018",
-  "Image_019",
-  "Image_020",
-  "Image_021",
+
 
   "Image_023",
   "Image_024",
@@ -36,7 +34,7 @@ var imageArray = [
   "Image_026",
   "Image_027",
   "Image_028",
-  "Image_029",
+
  
 
 ];

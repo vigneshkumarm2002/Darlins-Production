@@ -452,18 +452,15 @@ font-weight: 400;
 }
 
 .partner-logo {
-  width: 150px;
-  height: 150px;
   display: flex;
   gap: 100px;
   justify-content: center;
-
-
+  
 }
 
 .partner-logo img {
-  height: 100%;
-  width: 100%;
+  width: 150px;
+  height: 150px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   
 }
@@ -930,6 +927,18 @@ height:90%;
   font-size: 16px;
   }
   
+  .partner-logo {
+
+    gap: 30px;
+    justify-content: center;
+    
+  }
+  
+  .partner-logo img {
+    width: 130px;
+    height: 130px;    
+  }
+  
 
 }
 
@@ -1055,9 +1064,17 @@ height:90%;
   }
   
   .partner-logo {
-    width: 130px;
-    height: 110px;
+width: 100%;
     gap: 20px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  
+  .partner-logo img {
+    width: 120px;
+    height: 120px;    
   }
 
     .connectSection {
