@@ -35,6 +35,7 @@
                 <ul>
                   <li><a href="./index.html " >Home</a></li>
                   <li><a href="./event.html " >Events</a></li>
+                  <li><a href="./achievement.html ">Achievements</a></li>
                   <li><a href="./gallery.html " >Gallery</a></li>
                   <li><a href="./contact.html " >Contact Us</a></li>
                   <li><a href="./about.html " >About Us</a></li>
@@ -198,25 +199,18 @@
                     </svg>
                 </div>
             </div>
-
-
             <div class="contact-form-container">
-                <form class="contact-form" id="contactForm">
+                <form action="https://sheetdb.io/api/v1/qpmbv5jp0rv2d" method="POST"  class="contact-form" id="sheetdb-form" >
                     <span class="form-header">Contact us</span>
-                    <input type="text" id="name" class="name-input" name="name" placeholder="Full name" required />
-                    <input type="email" id="email" class="email-input" name="email" placeholder="Email" required />
-                    <input type="text" id="subject" class="subject-input" name="subject" placeholder="Subject"
-                        required />
-                    <textarea name="message" id="message" cols="30" rows="5" class="message" placeholder="Message..."
-                        required></textarea>
+                    <input type="text" id="name" class="name-input" name="Name" placeholder="Full name" required />
+                    <input type="email" id="email" class="email-input" name="Email" placeholder="Email" required />
+                    <input type="text" id="subject" class="subject-input" name="Subject" placeholder="Subject" required />
+                    <textarea name="Message" id="message" cols="30" rows="5" class="message-input" placeholder="Message..." required></textarea>
+                    <input type="hidden" id="currentDateTime" name="DateTime" />
                     <button class="submit" type="submit">Submit</button>
                 </form>
-
             </div>
-
-
-
-
+            
 
         </div>
         <div id="overlay" ></div>

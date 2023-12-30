@@ -304,7 +304,7 @@ body {
   white-space: nowrap;
 }
 .small-btn{
-  width: 150px;
+  /* width: 150px; */
 }
 
 .button-1:active,
@@ -446,7 +446,9 @@ font-weight: 400;
   align-items: center;
 
 }
-
+.achievementButton{
+  margin-top: -50px;
+}
 .achievementSection h3 {
   margin-top: 10px;
 }
@@ -462,6 +464,7 @@ font-weight: 400;
   width: 150px;
   height: 150px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  object-fit: contain;
   
 }
 .association{
@@ -1162,3 +1165,17 @@ text-align: center;
   
 
   }
+
+  /* @media screen and (min-width: 1600px) {
+    body {
+      margin: 0 auto; 
+      width: 1400px; 
+    }
+    .navbar {
+       
+      width: 1400px;
+      left: 50%;
+      transform: translateX(-50%);
+    
+    }
+  } */

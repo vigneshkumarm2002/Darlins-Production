@@ -1,11 +1,11 @@
 body{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+ 
 }
 header{
     position: relative;
-    background-image: url("./../asset/abtbg.jpg");
+    background-image: url("./../asset/aboutBanner.jpg");
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -16,7 +16,7 @@ header{
   }
   
   footer{
-    margin-top: 50px;
+    padding-top: 50px;
   }
   
   

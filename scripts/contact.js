@@ -1,5 +1,3 @@
-emailjs.init('70ILZAWx2lIXiOtyA');
-
 // Get references to the modal, overlay, and body
 const modal = document.getElementById("modal");
 const overlay = document.getElementById("overlay");
@@ -19,38 +17,43 @@ function closeModal() {
   body.classList.remove("modal-open");
 }
 
-// Event listener for form submission
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+function formatCurrentDateTime() {
+  const currentDateTimeInput = document.getElementById("currentDateTime");
+  const currentDate = new Date();
+  
+  // Format date and time components
+  const day = currentDate.getDate().toString().padStart(2, "0");
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, "0");
+  const year = currentDate.getFullYear().toString().slice(-2); // Get last 2 digits of the year
+  const hours = currentDate.getHours().toString().padStart(2, "0");
+  const minutes = currentDate.getMinutes().toString().padStart(2, "0");
 
-  // Get the form data
-  var formData = new FormData(event.target);
+  // Create the formatted date and time string
+  const formattedDateTime = `${day}/${month}/${year}  -  ${hours}:${minutes}`;
+  
+  // Set the formatted date and time as the input value
+  currentDateTimeInput.value = formattedDateTime;
+}
 
-  // Prepare the email template parameters
-  var templateParams = {
-    from_name: formData.get("name"),
-    from_email: formData.get("email"),
-    subject: formData.get("subject"),
-    message: formData.get("message")
-  };
-
-  // Send the email using EmailJS
-  emailjs.send("service_5er5azl", "template_mt6h3zv", templateParams)
-    .then(function(response) {
-      console.log("Email sent successfully!", response.status, response.text);
-      // Do any additional actions you want after the email is sent
-
-      // Reset the form values
-      event.target.reset();
-
-      // Display the modal
+var form = document.getElementById('sheetdb-form');
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  formatCurrentDateTime() 
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+  })
+    .then((response) => response.json())
+    .then(() => {
       openModal();
-    })
-    .catch(function(error) {
-      console.error("Error sending email:", error);
-      // Handle any errors that occurred during sending the email
+      clearForm(); // Call the function to clear form values
     });
 });
 
 // Event listener for the close button in the modal
 document.getElementById("closeButton").addEventListener("click", closeModal);
+
+// Function to clear form values
+function clearForm() {
+  document.getElementById("sheetdb-form").reset(); // Reset the form
+}

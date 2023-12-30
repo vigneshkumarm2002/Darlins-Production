@@ -60,7 +60,8 @@
     gap: 20px;
   }
   .upper-part h3{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
   }
   .upper-part p ,li{
     font-size: 16px;
