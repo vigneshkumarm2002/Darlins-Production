@@ -89,10 +89,17 @@
             <li onclick="openModal('TermsModal')">Terms and Conditions</li>
           </div>
 
-          <button class="button-1" role="button" onclick="openModal('FormModal')">Register Now</button>
-        </div>
+          <!-- <button  class="button-1" role="button" onclick="openModal('FormModal')">Register Now</button> -->
 
-       
+          <a
+            href="https://api.whatsapp.com/send?phone=9043527456"
+            target="_blank"
+            class="button-1"
+            role="button"
+          >
+            Register Now
+          </a>
+        </div>
       </div>
     </section>
 
@@ -190,7 +197,7 @@
       </div>
     </div>
 
-    <div id="FormModal" class="modal">
+    <!-- <div id="FormModal" class="modal">
       <div class="modal-content">
         <div class="modalHeader">
           <span
@@ -202,7 +209,12 @@
           <h2>Registration Form</h2>
         </div>
         <div class="eventForm">
-          <form action="https://sheetdb.io/api/v1/6zrawluer6y3m" method="POST" class="contact-form" id="sheetdb-form">
+          <form
+            action="https://sheetdb.io/api/v1/6zrawluer6y3m"
+            method="POST"
+            class="contact-form"
+            id="sheetdb-form"
+          >
             <div class="inputFields">
               <input
                 type="text"
@@ -312,13 +324,7 @@
                   required
                 />
               </div>
-              <!-- <input
-                type="file"
-                id="pic"
-                class="pic-input"
-                name="Picture"
-                required
-              /> -->
+
               <input type="hidden" id="currentDateTime" name="DateTime" />
             </div>
 
@@ -326,7 +332,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div id="TermsModal" class="modal">
       <div class="modal-content">
@@ -463,17 +469,18 @@
             <h4>Audition Fee Details</h4>
             <div class="eventListItems">
               <li>Entry fee for on spot audition : Rs.250</li>
-              <li>Venue : Saveetha college of architecture & Design , Chennai </li>
+              <li>
+                Venue : Saveetha college of architecture & Design , Chennai
+              </li>
               <li>Date : 24th February</li>
             </div>
           </div>
           <div class="modalData">
             <h4>Grand Tamilnadu Fee Details</h4>
             <div class="eventListItems">
-              <li>Registration fee - Rs.500 to confirm your slot 
-              </li>
-              <li>Entry fee - Rs.4000  </li>
-              <li>Payment Deadline - 1st of March 2024 </li>
+              <li>Registration fee - Rs.999 to confirm your slot</li>
+              <li>Entry fee - Rs.3999</li>
+              <li>Payment Deadline - 1st of March 2024</li>
               <li>Venue - Saveetha Dental college , Chennai .</li>
             </div>
           </div>
@@ -556,7 +563,7 @@
 
     <footer id="fetchFooter"></footer>
     <script src="./scripts/event.js"></script>
-   
+
     <script src="./scripts/fetch.js"></script>
     <script src="./scripts/scroll.js"></script>
   </body>
