@@ -1,49 +1,38 @@
 var imageArray = [
   "Image_001",
   "Img_014",
-
-
-  
   "Img_015",
- 
   "Image_013",
   "Image_032",
   "Img_017",
- 
   "Img_002",
   "Image_031",
+  "Img_008",
   "Img_012",
   "Img_013",
   "Img_003",
-  "Img_004",
   "Img_005",
   "Img_006",
-
-  "Image_014",
   "Image_033",
-
   "Image_002",
-
-  "Image_004",
-  "Image_026",
-  "Image_033",
+  "Img_004",
   "Img_007",
-  "Img_008",
   "Img_009",
   "Img_010",
-  "Img_008",
   "Img_016",
   "Image_010",
-  "Image_012",
-  "Image_003",
   "Image_024",
+  "Image_003",
+  "Image_033",
   "Img_011",
-  "Image_005",
+  "Image_005",  
   "Image_006",
   "Image_007",
   "Image_023",
   "Image_027",
   "Img_001",
+  "Image_026",
+ 
 ];
 
 const galleryContainer = document.getElementById("gallery");

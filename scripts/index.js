@@ -23,12 +23,11 @@ setInterval(showNextItem, 5000);
 var modalImg = [
   "Image_031",
   "Img_014",
-  "Img_004",
+
   "Img_006",
   "Image_027",
   "Image_006",
-  "Image_012",
-  "Image_014",
+ 
   "Image_007",
   "Image_001",
  
