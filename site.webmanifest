@@ -1,23 +1,23 @@
 {
-    "name": "Your Website Name",
-    "short_name": "Short Name",
-    "description": "Description of your website",
+    "name": "Darlins Production",
+    "short_name": "Darlins",
+    "description": "Your Gateway to Glamour! Join the leading modelling agency in Chennai, India, and let your star shine on the runway. Elevate your dreams with our exclusive fashion events, transformative workshops, captivating photoshoots, and personalized model grooming services. Step into the spotlight with Darlins Production and turn your modeling aspirations into a dazzling reality. Unleash your potential, embrace your style, and let your journey in the world of fashion begin!",
     "start_url": "/",
     
-  "icons": [
-    {
-      "src": "./android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "./android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "theme_color": "#ffffff",
-  "tile_color": "#4285f4",
-  "background_color": "#ffffff",
-  "display": "standalone"
+    "icons": [
+        {
+            "src": "./android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "tile_color": "#4285f4",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
